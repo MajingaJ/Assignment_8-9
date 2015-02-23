@@ -1,0 +1,81 @@
+        	*{
+        		font-family: Verdana;
+        		background-color: #d7eff2;
+        		color:#848484;
+        	}
+
+        	h1, h2{
+        		text-align: center;
+        		color:#ff4444;
+        	}
+
+        	.button1, .button2, .button3{
+				padding:10px 12px;
+				border:1px solid #fa8072;
+				text-decoration: none;
+				border-radius: 5px;
+				background-color: #fa8072;
+				color:#230b2f;
+				width: 200px;
+				height: 250px;
+			}
+
+			.nav{
+				display: inline;
+			}
+
+			#ulnav{
+				text-align: center;
+			}
+
+			/*.button1:hover, .button2:hover, .button3:hover{
+				background-color: #00ff7f;
+				color:#230b2f;
+				border:1px solid #00ff7f;
+			}*/
+
+			.button1:hover{
+				background : url(http://rlv.zcache.com/green_house_button-r990f3eb096f1471ba2c605d410a4c9d9_x7j3i_8byvr_324.jpg) no-repeat;
+			}
+
+			.button2:hover{
+				background : url(http://rlv.zcache.com/robot_button-r7ebac9b0e9334f67bb3ea3aa02c1a89e_x7j12_8byvr_324.jpg) no-repeat;
+			} 
+
+			.button3:hover{
+				background : url(http://rlv.zcache.com/vintage_black_and_white_camera_button-r8632a86ef5cc44319886c74448f341c1_x7j3i_8byvr_324.jpg) no-repeat;
+			}
+
+			.gundam{
+				float:left;
+				width:40%;
+				margin:20px;
+				border-right: 1px solid #230b2f;
+				padding-right: 60px;
+			}
+
+			.trans{
+				float:left;
+				width:40%;
+				margin:20px 20px 20px 40px;
+			}
+
+			.h3p2{
+				text-align: center;
+				color:#27408b;
+			}
+
+			.lip2{
+				color:#b23aee;
+				font-weight: bold;
+			}
+
+			.ap2{
+				text-decoration: none;
+				color:#b23aee;
+			}
+
+			.ap2:hover{
+				color:#230b2f;
+				background-color: #ffff66;
+			}

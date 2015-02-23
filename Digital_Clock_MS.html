@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>
+            $(document).ready(
+            function(){
+                alert("The document is ready");
+            $("#txt").slideUp(3000);
+            $("#txt").fadeIn(3000);
+            $("#txt").fadeOut(3000);
+            $("#txt").fadeIn(3000);
+                });
+        </script>
+        
+       
+    <style>
+        #txt{
+            width:900px;
+            height:150px;
+            color:black;
+            background-color: yellow;
+            font-weight: bold;
+            font-family: Impact;
+            border:5px solid black;
+            text-align: center;
+            font-size: 110px;
+            margin-right: 20%;
+            margin-left: 20%;
+            margin-top: 20%;
+
+        }
+    </style>
+</head>
+
+<body onload="startTime()">
+
+    <script>
+    function startTime() {
+        var today=new Date();
+        var h=today.getHours();
+        var m=today.getMinutes();
+        var s=today.getSeconds();
+        var ms=today.getMilliseconds();
+        var ampm=(h < 12)? "AM" : "PM";
+        h = checkTime(h);
+        m = checkTime(m);
+        s = checkTime(s);
+        ms = checkTime(ms);
+        ampm = checkTime(ampm);
+        document.getElementById('txt').innerHTML = h+":"+m+":"+s+":"+ms+"  "+ampm;
+        var t = setTimeout(function(){startTime()},1);
+        }
+
+        function checkTime(i) {
+        if (i<10) {i = "0" + i};  // add zero in front of numbers < 10
+        return i;
+        }
+
+        var answer = prompt("Do you want to know what time it is right now??");
+        if (answer == "yes") {
+            console.log("Ok! Here it is!");
+        } else {
+            console.log("sucks for you!");
+            exit
+        }
+
+
+    </script>
+
+
+    <div id="txt"></div>
+
+</body>
+</html>
